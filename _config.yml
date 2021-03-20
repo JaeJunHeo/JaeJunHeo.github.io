@@ -16,7 +16,7 @@ resume: false
 resume-external: false
 resume-url: https://google.com/?q=my+resume
 
-url: https://jaejunheo.github.io/
+url: https://jaejunheo.github.io/post
 # your url: https://USERNAME.github.io
 
 permalink: /:title/
@@ -53,18 +53,18 @@ github: jaejunheo
 email: aaa@kakao.com
 
 authors:
-  johndoe:
-    name: John Doe
-    bio: A Man who travels the world eating noodles
-    external-image: false
-    picture: assets/images/profile.jpg
-    twitter: johndoe
-  jamesfoster:
-    name: James Foster
-    bio: A Man who develops software with coffee
-    external-image: false
-    picture: assets/images/james.jpg
-    twitter: jamesfoster
+  # johndoe:
+  #   name: John Doe
+  #   bio: A Man who travels the world eating noodles
+  #   external-image: false
+  #   picture: assets/images/profile.jpg
+  #   twitter: johndoe
+  # jamesfoster:
+  #   name: James Foster
+  #   bio: A Man who develops software with coffee
+  #   external-image: false
+  #   picture: assets/images/james.jpg
+  #   twitter: jamesfoster
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
@@ -90,7 +90,7 @@ blog: true
 read-time: true
 
 # do you want to show the "tags" inside the posts?
-show-tags: true
+show-tags: false
 
 # related posts inside a post?
 related: true
@@ -99,7 +99,7 @@ related: true
 post-advance-links: [blog]
 
 # show author block at the end of a post ?
-show-author: true
+show-author: false
 
 # do you want some animations?
 animation: true
