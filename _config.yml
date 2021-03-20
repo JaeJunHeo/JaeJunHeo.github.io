@@ -1,6 +1,6 @@
 # main text of home
 name: 허재준
-bio: A Man who travels the world eating noodles
+bio: 도전
 
 # twitter summary info
 description: A blog about technology and stuff related
@@ -16,7 +16,7 @@ resume: true
 resume-external: true
 resume-url: https://google.com/?q=my+resume
 
-url: https://jaejunheo.github.io/indigo
+url: https://jaejunheo.github.io/
 # your url: https://USERNAME.github.io
 
 permalink: /:title/
@@ -34,8 +34,8 @@ disqus:
   categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-facebook: myfacebook
-twitter: mytwitter
+# facebook: myfacebook
+# twitter: mytwitter
 # instagram: myinstagram
 # pinterest: mypinterest
 # linkedin: mylinkedin
@@ -47,10 +47,10 @@ github: mygithub
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
 # reddit: username
-medium: medium
+# medium: medium
 # vimeo: myvimeo
 # lanyrd: mylanyrd
-email: myemail@gmail.com
+email: aaa@kakao.com
 
 authors:
   johndoe:
