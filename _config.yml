@@ -41,8 +41,8 @@ comments:
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
   utterances:
-    theme                : "github-dark-orange" # "github-light" (default), "github-dark"
-    issue_term           : "url" # "pathname" (default)
+    theme                : # utterances는 이슈로 댓글 관리하는건데 일단 락 (답글기능, 이미지첨부가 불편) "github-dark-orange" # "github-light" (default), "github-dark"
+    issue_term           : # "url" # "pathname" (default)
   staticman:
     branch               : # "master"
     endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
