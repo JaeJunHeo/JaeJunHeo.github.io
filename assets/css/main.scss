@@ -6,3 +6,14 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+// 배달의민족 주아체 google web font
+//@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+// 배달의민족 한나체 air (https://noonnu.cc/font_page/113)
+@font-face {
+    font-family: 'BMHANNAAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/BMHANNAAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
