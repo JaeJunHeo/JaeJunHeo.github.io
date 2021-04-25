@@ -280,6 +280,9 @@ defaults:
       comments: true
       share: true
       related: true
+      toc: true
+      toc_sticky: true
+      # toc_label: ""
 
   # _pages
   - scope:
@@ -288,3 +291,5 @@ defaults:
     values:
       layout: single
       author_profile: true
+      toc: true
+      toc_sticky: true
