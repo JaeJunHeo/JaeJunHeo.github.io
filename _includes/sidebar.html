@@ -1,5 +1,5 @@
 {% if page.author_profile or layout.author_profile or page.sidebar %}
-  <div class="sidebar sticky">
+  <div class="sidebar sticky scrollbar__hide" style="-ms-overflow-style: none;">
   {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
   {% if page.sidebar %}
     {% for s in page.sidebar %}
@@ -15,5 +15,29 @@
       {% include nav_list nav=page.sidebar.nav %}
     {% endif %}
   {% endif %}
+  
+  <!-- 카테고리 갯수 세주고 출력하는 코드 -->
+  {% assign categories_max = 0 %}
+  {% for category in site.categories %}
+    {% if category[1].size > categories_max %}
+    {% assign categories_max = category[1].size %}
+    {% endif %}
+  {% endfor %}
+
+  <hr>
+  <h3><a href="/categories/"><span style="font-weight: bold;">Categories</span></a></h3>
+    <ul class="taxonomy__index__sidebar">
+      {% for i in (1..categories_max) reversed %}
+        {% for category in site.categories %}
+          {% if category[1].size == i %}
+            <li>
+              <a href="{{ '/categories/#' | append: category[0] | camelcase | downcase | prepend: site.url | replace: ' ', '-' }}">
+                {{ category[0] }}&nbsp;&nbsp;<span class="taxonomy__count">{{ i }}</span>
+              </a>
+            </li>
+          {% endif %} 
+        {% endfor %}
+      {% endfor %}
+    </ul>
   </div>
 {% endif %}

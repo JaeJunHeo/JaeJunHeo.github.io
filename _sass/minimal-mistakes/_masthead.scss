@@ -13,8 +13,8 @@
 
   &__inner-wrap {
     @include clearfix;
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto; 마진 없애기 테스트
     padding: 1em;
     max-width: 100%;
     display: -webkit-box;
@@ -30,7 +30,7 @@
     font-weight: bold;
 
     @include breakpoint($x-large) {
-      max-width: $max-width;
+      //max-width: $max-width; // .masthead__menu-item 메뉴 빈공간 채움 방지 (오른쪽 정렬)
     }
 
     nav {

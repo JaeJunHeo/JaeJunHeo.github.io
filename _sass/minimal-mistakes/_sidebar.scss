@@ -127,8 +127,8 @@
   }
 
   img {
-    max-width: 110px;
-    border-radius: 50%;
+    max-width: 110px; // default : 기본값 : 110px
+    border-radius: 30%; // default : 기본값 : 50%
 
     @include breakpoint($large) {
       padding: 5px;
@@ -344,3 +344,36 @@
   }
 }
 
+
+// sidebar 카테고리 파트 커스터마이징
+.taxonomy__index__sidebar {
+  display: grid;
+  grid-column-gap: 2em;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 1.414em 0;
+  padding: 0;
+  font-size: 0.75em;
+  list-style: none;
+  font-size: $type-size-5;
+
+  @include breakpoint($large) {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0em 0.1em 0em 0em
+  }
+
+  li>a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0.25em 0;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid $border-color;
+  }
+
+  li>a:hover {opacity: 0.3; //background-color: #1ab7ea;
+  }
+}

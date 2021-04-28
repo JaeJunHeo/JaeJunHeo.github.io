@@ -4,8 +4,8 @@
 
 #main {
   @include clearfix;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto; 마진 없애기 테스트
   padding-left: 1em;
   padding-right: 1em;
   -webkit-animation: $intro-transition;
@@ -15,7 +15,7 @@
   animation-delay: 0.15s;
 
   @include breakpoint($x-large) {
-    max-width: $max-width;
+    //max-width: $max-width; // 넓이 고정 방지
   }
 }
 
@@ -43,6 +43,7 @@ body {
   }
 
   @include breakpoint($x-large) {
+    float: right;
     width: calc(100% - #{$right-sidebar-width});
     padding-right: $right-sidebar-width;
   }
@@ -510,14 +511,17 @@ body {
   margin-top: 2em;
   padding-top: 1em;
   border-top: 1px solid $border-color;
+  width: 100%;
 
   @include breakpoint($large) {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
+    padding-right: $right-sidebar-width-narrow;
   }
 
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
+    padding-right: $right-sidebar-width;
   }
 
   a {
@@ -530,6 +534,20 @@ body {
   margin-bottom: 10px;
   font-size: $type-size-6;
   text-transform: uppercase;
+}
+
+// .page__related에 아이템들 css 적용
+.grid__item{
+  border: 1px solid #1ab7ea;
+  padding: 0.55em 0.55em 0.55em 0.55em;
+  cursor: pointer;
+}
+
+// .page__related에 아이템들 타이틀, 내용에 줄내림 방지 + ...처리
+.archive__item-title, .archive__item-excerpt{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /*
@@ -556,4 +574,9 @@ body {
       padding-right: 0;
     }
   }
+}
+
+// 사이드바 스크롤 방지코드  출처 : https://scribnote5.github.io/github%20page/GithubPage1/
+.scrollbar__hide::-webkit-scrollbar {
+  display:none;  
 }

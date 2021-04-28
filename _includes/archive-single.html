@@ -10,7 +10,13 @@
   {% assign title = post.title %}
 {% endif %}
 
+<!-- <div class="{{ include.type | default: 'list' }}__item"></div> 수정전 원본, 수정본에선 블록단위(div) 링크 추가 -->
+
+{% if include.type == "grid" %} <!-- include 타입이 grid라면 url 버튼 활성화 -->
+<div class="{{ include.type | default: 'list' }}__item" onclick="location.href='{{ post.url | relative_url }}'" style="border: 1px solid #1ab7ea;">
+{% else %}
 <div class="{{ include.type | default: 'list' }}__item">
+{% endif %}
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
