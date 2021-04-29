@@ -94,9 +94,9 @@ analytics:
 
 # Site Author
 author:
-  name             : " 성실공간"
+  name             : "성실공간"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : " 2021.03 ~"
+  bio              : "2021.03 ~"
   location         : "South Korea"
   email            : #"aaa@kakao.com"
   links:
