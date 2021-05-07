@@ -52,9 +52,9 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
-search                   : # true, false (default)
+search                   : # true, false (default) # 커스텀 사양 추가했지만 검색 기능 비활성화
 search_full_content      : # true, false (default)
-search_provider          : # lunr (default), algolia, google
+search_provider          : # lunr (default), algolia, google # adding "custam", https://blog.hax0r.info/2018-02-18/using-search-from-jekyll/
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
@@ -208,7 +208,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # main 페이지에서 view되는 최근 게시물 수
+paginate: 4 # main 페이지에서 view되는 최근 게시물 수
 paginate_path: /page:num/
 timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -283,7 +283,7 @@ defaults:
       toc: true
       toc_sticky: true
       # show_date: true
-      # toc_label: ""
+      toc_label: "이 문서의 내용"
 
   # _pages
   - scope:

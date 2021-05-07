@@ -323,3 +323,37 @@ figure.highlight {
     border-bottom: 0;
   }
 }
+
+// highlight css
+/* for block of numbers */
+.hljs-ln-line.hljs-ln-numbers {
+  font-family: $monospace;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  text-align: center;
+  color: #ccc;
+  border-right: 1px solid #CCC;
+  vertical-align: top;
+  padding-right: 10px;
+  /* your custom style here */
+}
+
+/* for block of code */
+.hljs-ln-line.hljs-ln-code {
+  font-family: $monospace;
+  padding-left: 15px;
+}
+
+.hljs {
+  // background: $base00;
+  // color: $base05;
+  font-family: $monospace;
+  // font-size: $type-size-6;
+  line-height: 1.8;
+  border-radius: $border-radius;
+}

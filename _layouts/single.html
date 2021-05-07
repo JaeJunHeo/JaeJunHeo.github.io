@@ -33,7 +33,7 @@ layout: default
             <p class="page__meta" style="padding-top: 0.5em; padding-bottom: 1em;">
               <span class="page__meta-date" >
                 <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i>&nbsp;게시일:
-                <time datetime="{{ date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+                <time datetime="{{ date | date_to_xmlschema }}">{{ page.date | date: "%Y년 %m월 %d일" }}</time>
               </span>
             </p>
           {% endif %}

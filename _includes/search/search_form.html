@@ -22,5 +22,23 @@
   {%- when "algolia" -%}
   <div class="search-searchbar"></div>
   <div class="search-hits"></div>
+
+  {%- when "custom" -%}
+  <form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      {{ site.data.ui-text[site.locale].search_label_text | default: 'Enter your search term...' }}
+    </label>
+    <input name="search-input" type="search" id="search" class="search-input" tabindex="-1" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}" autocomplete="off" />
+    <script type="text/javascript" src="/assets/js/light-jekyll-search.js"></script>
+    <script type="text/javascript">
+      lightJekyllSearch.search({
+          el : document.querySelector('form input[name="search-input"]'),
+          placeholder : '검색어를 입력해주세요.',
+          postJsonPath : '/assets/json/posts.json'
+      });
+  </script>
+  </form>
+  <div id="results" class="results"></div>
+
   {%- endcase -%}
 </div>
