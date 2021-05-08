@@ -18,9 +18,24 @@
     font-style: normal;
 }
 
+// 페이북 라이트 글씨체
 @font-face {
     font-family: 'paybooc-Light';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// 나눔고딕코딩체
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+.nanumgothiccoding * {
+ font-family: 'Nanum Gothic Coding', monospace;
+}
+
+//D2Coding
+@font-face {
+    font-family: 'D2Coding';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
