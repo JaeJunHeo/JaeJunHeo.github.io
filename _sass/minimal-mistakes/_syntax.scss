@@ -372,6 +372,7 @@ code.language-plaintext.highlighter-rouge{
 .codeTitleBar{
   display: flex;
   flex-direction: row;
+  margin-top: 0.5em;
 }
 
 .copyButton{
@@ -388,10 +389,10 @@ code.language-plaintext.highlighter-rouge{
   transition: all .5s ease-in-out;
 }
 
-.copyButton:hover{
-  //opacity: 0;
-  //background: #011627;
-}
+// .copyButton:hover{
+//   //opacity: 0;
+//   //background: #011627;
+// }
 
 .copyButton.active{
   // opacity: 0;
