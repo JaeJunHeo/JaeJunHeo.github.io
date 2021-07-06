@@ -13,14 +13,12 @@ last_modified_at: 2021-07-06
 
 ## 1. docker 설치
 
----
 
 [`docker`](https://www.docker.com/products/docker-desktop) 사이트에 접속해서 자신의 운영체제에 맞는 버전을 설치해줍니다.   
 저는 윈도우 버전을 설치했고 WSL2 사용을 체크하고 설치했습니다.
 
 ## 2. docker 오류 해결
 
----
 
 설치 후 재부팅을 하고 도커를 실행해봤지만 오류로 인해 정상적으로 작동이 되지 않습니다.   
 `WslRegisterDistribution failed with error: 0x800701bc ...` 오류가 뜹니다.   
@@ -39,7 +37,6 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 ## 3. Windows Terminal 앱 설치 및 윈도우용 Ubuntu 앱 설치
 
----
 
 저는 편의성을 위해 `Windows Terminal 앱`을 설치하고 윈도우 Linux 커널을 사용하기 위해 `윈도우용 Ubuntu 앱`을 마이크로소프트 스토어에서 설치했습니다.
 
@@ -65,7 +62,6 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 ## 4. 설치 완료
 
----
 
 성공적으로 도커가 실행됐음을 확인 할 수 있습니다.
 
