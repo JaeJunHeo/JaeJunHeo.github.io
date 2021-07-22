@@ -7,7 +7,7 @@ categories:
   - 일반
 tags:
   - Text
-last_modified_at: 2021-07-21
+last_modified_at: 2021-07-22
 
 ---
 
@@ -15,10 +15,14 @@ last_modified_at: 2021-07-21
 
 gull template
 
-## 2. Vue Component 디자인 패턴
+## 2. Vue 디자인 패턴
 
 Common Approach   
 Building Controlled Components   
 Component with Slots   
 Renderless Components   
 High Order Components   
+Functional Components   
+
+Mixin   
+Composition API   
