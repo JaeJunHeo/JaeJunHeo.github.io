@@ -22,6 +22,23 @@
 @font-face {
     font-family: 'paybooc-Light';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Light.woff') format('woff');
+    // font-weight: normal;
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Gmarket Sans Medium
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Gmarket Sans Light
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -29,7 +46,7 @@
 // 나눔고딕코딩체
 @import url(//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
 .nanumgothiccoding * {
- font-family: 'Nanum Gothic Coding', monospace;
+    font-family: 'Nanum Gothic Coding', monospace;
 }
 
 // D2Coding
