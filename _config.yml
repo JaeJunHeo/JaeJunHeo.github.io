@@ -290,8 +290,8 @@ defaults:
       # show_date: true
       toc_label: "이 문서의 내용"
       excerpt: ""
-      categories: ["일반"]
-      tags: ["Text"]
+      categories: []
+      tags: []
       last_modified_at: ""
       
 
