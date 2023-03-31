@@ -1,14 +1,11 @@
 ---
-
-title:  "Azure Static Web App CI/CD 및 Config 설정"
-excerpt: "Azure Static Web App CI/CD 및 Config 설정"
-
+title: Azure Static Web App CI/CD 및 Config 설정
+excerpt: Azure Static Web App CI/CD 및 Config 설정
 categories:
-  - 일반
+- 일반
 tags:
-  - Text
-last_modified_at: 2021-07-17
-
+- Text
+last_modified_at: '2021-07-17'
 ---
 
 ## 1. Azure Static Web App Github Actions Config

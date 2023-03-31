@@ -266,6 +266,11 @@ compress_html:
   ignore:
     envs: development
 
+# collections:
+#   posts:
+#     output: true
+#     sidebar_label: News
+
 
 # Defaults
 defaults:
@@ -284,6 +289,11 @@ defaults:
       toc_sticky: true
       # show_date: true
       toc_label: "이 문서의 내용"
+      excerpt: ""
+      categories: ["일반"]
+      tags: ["Text"]
+      last_modified_at: ""
+      
 
   # _pages
   - scope:
@@ -291,6 +301,6 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: true
+      # author_profile: true
       # toc: true
       # toc_sticky: true
